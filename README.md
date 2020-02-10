@@ -1,2 +1,2 @@
 # react
-we start to programming react and react native
+start to learning react and react native
