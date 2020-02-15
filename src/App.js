@@ -6,22 +6,25 @@ import Welcome from './components/welcome'
 import Hello from './components/hello'
 import Message from './components/message'
 import Counter from './components/counter';
+import FunctionClick from './components/functionClick';
+import ClassClick from './components/classClick'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
 
-        <Counter />
-
+        <ClassClick />
+        <FunctionClick />
 
 
         {/*<Greate name="bruce" heroName="batman" >
+        <Counter />
         <p>this is cildren prop</p>
         </Greate>
         <Greate name="diana" heroName="wonder women" >
         <button>Action</button>
-    </Greate>*/}
+    </Greate>
         <Greate name="petter" heroName="mit php" />
         <Welcome name="bruce" heroName="batman" />
         {/*<Welcome name="clark" heroName="superman" />
