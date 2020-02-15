@@ -9,9 +9,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Greate /> */}
-        {/* <Welcome /> */}
-        <Hello />
+        <Greate name="bruce" heroName="batman" >
+        <p>this is cildren prop</p>
+        </Greate>
+        <Greate name="diana" heroName="wonder women" >
+        <button>Action</button>
+        </Greate>
+        <Greate name="petter" heroName="mit php" />
+        <Welcome name="bruce" heroName="batman" />
+        <Welcome name="clark" heroName="superman" />
+        <Welcome name="diana" heroName="wonder women" />
+        {/* <Hello /> */}
       </div>
     );
   }
