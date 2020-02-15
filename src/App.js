@@ -4,12 +4,19 @@ import './App.css';
 import Greate from './components/greate'
 import Welcome from './components/welcome'
 import Hello from './components/hello'
+import Message from './components/message'
+import Counter from './components/counter';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Greate name="bruce" heroName="batman" >
+
+        <Counter />
+
+
+
+        {/*<Greate name="bruce" heroName="batman" >
         <p>this is cildren prop</p>
         </Greate>
         <Greate name="diana" heroName="wonder women" >
@@ -19,7 +26,7 @@ class App extends Component {
         <Welcome name="bruce" heroName="batman" />
         <Welcome name="clark" heroName="superman" />
         <Welcome name="diana" heroName="wonder women" />
-        {/* <Hello /> */}
+        <Hello /> */}
       </div>
     );
   }
