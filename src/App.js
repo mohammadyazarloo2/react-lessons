@@ -21,10 +21,10 @@ class App extends Component {
         </Greate>
         <Greate name="diana" heroName="wonder women" >
         <button>Action</button>
-        </Greate>
+    </Greate>*/}
         <Greate name="petter" heroName="mit php" />
         <Welcome name="bruce" heroName="batman" />
-        <Welcome name="clark" heroName="superman" />
+        {/*<Welcome name="clark" heroName="superman" />
         <Welcome name="diana" heroName="wonder women" />
         <Hello /> */}
       </div>
