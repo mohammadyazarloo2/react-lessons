@@ -8,17 +8,25 @@ import Message from './components/message'
 import Counter from './components/counter';
 import FunctionClick from './components/functionClick';
 import ClassClick from './components/classClick'
+import EventBind from './components/EventBind';
 
 class App extends Component {
+
+
+
+
   render() {
     return (
       <div className="App">
 
+        <EventBind />
+        
+
+
+        {/*
         <ClassClick />
         <FunctionClick />
-
-
-        {/*<Greate name="bruce" heroName="batman" >
+        <Greate name="bruce" heroName="batman" >
         <Counter />
         <p>this is cildren prop</p>
         </Greate>
