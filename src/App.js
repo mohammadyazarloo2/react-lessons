@@ -9,6 +9,8 @@ import Counter from './components/counter';
 import FunctionClick from './components/functionClick';
 import ClassClick from './components/classClick'
 import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
+import CounterTime from './components/CounterTime'
 
 class App extends Component {
 
@@ -19,11 +21,14 @@ class App extends Component {
     return (
       <div className="App">
 
-        <EventBind />
+        <CounterTime />
         
 
 
         {/*
+        <ParentComponent />
+        <EventBind />
+
         <ClassClick />
         <FunctionClick />
         <Greate name="bruce" heroName="batman" >
