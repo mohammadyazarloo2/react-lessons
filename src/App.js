@@ -11,9 +11,16 @@ import ClassClick from './components/classClick'
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import CounterTime from './components/CounterTime'
+import UserGreeting from './components/UserGreeting';
 
 class App extends Component {
 
+  constructor(props){
+    super(props)
+    this.state={
+      isLoggedIn:false
+    }
+  }
 
 
 
@@ -21,11 +28,12 @@ class App extends Component {
     return (
       <div className="App">
 
-        <CounterTime />
+        <UserGreeting />
         
 
 
         {/*
+        <CounterTime />
         <ParentComponent />
         <EventBind />
 
