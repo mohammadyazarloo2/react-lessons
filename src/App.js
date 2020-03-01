@@ -12,15 +12,11 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import CounterTime from './components/CounterTime'
 import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
 
 class App extends Component {
 
-  constructor(props){
-    super(props)
-    this.state={
-      isLoggedIn:false
-    }
-  }
+  
 
 
 
@@ -28,11 +24,12 @@ class App extends Component {
     return (
       <div className="App">
 
-        <UserGreeting />
         
+        <NameList />
 
 
         {/*
+        <UserGreeting />
         <CounterTime />
         <ParentComponent />
         <EventBind />
