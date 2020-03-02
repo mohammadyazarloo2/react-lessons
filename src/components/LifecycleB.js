@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 
+
 class LifecycleB extends Component{
 
     constructor(props){
@@ -18,6 +19,20 @@ class LifecycleB extends Component{
 
     componentDidMount(){
         console.log('lifecycleB componentdidmount')
+    }
+
+
+    shouldComponentUpdate(){
+        console.log('lifecycleB shouldcomponentUpdate')
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps,prevState){
+        console.log('lifecycleB getsnapshotBedforeUpdate')
+    }
+
+    componentDidUpdate(){
+        console.log('lifecycleB componentDidUpdate')
     }
 
     render(){
