@@ -13,6 +13,10 @@ import ParentComponent from './components/ParentComponent';
 import CounterTime from './components/CounterTime'
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Stylesheets from './components/Stylesheets';
+import Inline from './components/Inline';
+import './components/appStyles.css'
+import styles from './components/appStyles.module.css'
 
 class App extends Component {
 
@@ -24,11 +28,14 @@ class App extends Component {
     return (
       <div className="App">
 
-        
-        <NameList />
-
+        <h1 className="error">Error</h1>
+        <h1 className={styles.success}>success</h1>
+        <Inline />
 
         {/*
+        
+        <Stylesheets primary={true} />
+        <NameList />
         <UserGreeting />
         <CounterTime />
         <ParentComponent />
