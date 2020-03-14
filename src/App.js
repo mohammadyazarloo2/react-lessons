@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PureComponent } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greate from './components/greate'
@@ -21,6 +21,9 @@ import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import PureComp from './components/PureComp';
+import RegComp from './components/RegComp';
+import ParentComp from './components/ParentComp';
 
 class App extends Component {
 
@@ -31,13 +34,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <ParentComp />
         
-        <FragmentDemo />
-
-        <Table />
 
 
         {/*
+        <FragmentDemo />
+
+        <Table />
         <LifecycleA />
         <Form />
         <h1 className="error">Error</h1>
