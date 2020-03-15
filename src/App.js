@@ -24,6 +24,7 @@ import Table from './components/Table';
 import PureComp from './components/PureComp';
 import RegComp from './components/RegComp';
 import ParentComp from './components/ParentComp';
+import MemoComp from './components/MemoComp';
 
 class App extends Component {
 
@@ -39,6 +40,7 @@ class App extends Component {
 
 
         {/*
+        <ParentComp />
         <FragmentDemo />
 
         <Table />
