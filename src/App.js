@@ -25,6 +25,7 @@ import PureComp from './components/PureComp';
 import RegComp from './components/RegComp';
 import ParentComp from './components/ParentComp';
 import MemoComp from './components/MemoComp';
+import RefsDemo from './components/RefsDemo';
 
 class App extends Component {
 
@@ -35,11 +36,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ParentComp />
         
+        <RefsDemo />
 
 
         {/*
+        <ParentComp />
         <ParentComp />
         <FragmentDemo />
 
