@@ -26,6 +26,8 @@ import RegComp from './components/RegComp';
 import ParentComp from './components/ParentComp';
 import MemoComp from './components/MemoComp';
 import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParent from './components/FRParent';
 
 class App extends Component {
 
@@ -37,10 +39,12 @@ class App extends Component {
     return (
       <div className="App">
         
-        <RefsDemo />
+        <FRParent />
 
 
         {/*
+        <FocusInput />
+        <RefsDemo />
         <ParentComp />
         <ParentComp />
         <FragmentDemo />
