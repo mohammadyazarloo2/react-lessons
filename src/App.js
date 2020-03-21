@@ -29,6 +29,13 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParent from './components/FRParent';
 import PortalDemo from './PortalDemo';
+<<<<<<< HEAD
+=======
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+>>>>>>> commit again all files, new topic higher order component
 
 class App extends Component {
 
@@ -40,10 +47,29 @@ class App extends Component {
     return (
       <div className="App">
         
+<<<<<<< HEAD
         <PortalDemo />
 
 
         {/*
+=======
+        <ClickCounter name='walk' />
+        <HoverCounter />
+        
+
+
+        {/*
+        <ErrorBoundary>
+          <Hero heroName="batman" />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName="supermane" />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName="joker" />
+        </ErrorBoundary>
+        <PortalDemo />
+>>>>>>> commit again all files, new topic higher order component
         <FRParent />
         <FocusInput />
         <RefsDemo />
