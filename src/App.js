@@ -29,13 +29,14 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParent from './components/FRParent';
 import PortalDemo from './PortalDemo';
-<<<<<<< HEAD
-=======
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
->>>>>>> commit again all files, new topic higher order component
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoveredCountTwo from './components/HoveredCountTwo';
+import User from './components/User';
+import CounterTwo from './components/CounterTow';
 
 class App extends Component {
 
@@ -46,15 +47,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
-<<<<<<< HEAD
-        <PortalDemo />
 
+        <CounterTwo render={(count,incrementCount)=>(
+        <ClickCounterTwo count={count} incrementCount={incrementCount} />)} />
+
+        <CounterTwo render={(count,incrementCount)=>(
+        <HoveredCountTwo count={count} incrementCount={incrementCount} />)} />
+        
+        
 
         {/*
+        <ClickCounterTwo />
+        <HoveredCountTwo />
+        <User render={(isLoggedIn)=> isLoggedIn ?'walk' : 'guest'} />
 =======
-        <ClickCounter name='walk' />
+<ClickCounter name='walk' />
         <HoverCounter />
+        
+        <PortalDemo />
         
 
 
@@ -69,7 +79,6 @@ class App extends Component {
           <Hero heroName="joker" />
         </ErrorBoundary>
         <PortalDemo />
->>>>>>> commit again all files, new topic higher order component
         <FRParent />
         <FocusInput />
         <RefsDemo />
