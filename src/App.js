@@ -37,6 +37,8 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoveredCountTwo from './components/HoveredCountTwo';
 import User from './components/User';
 import CounterTwo from './components/CounterTow';
+import { UserProvide, UserConsumer } from './components/UserContext';
+import ComponentC from './components/ComponentC';
 
 class App extends Component {
 
@@ -48,15 +50,18 @@ class App extends Component {
     return (
       <div className="App">
 
+        <UserProvide value="walk">
+          <ComponentC />
+        </UserProvide>
+        
+
+        {/*
         <CounterTwo render={(count,incrementCount)=>(
         <ClickCounterTwo count={count} incrementCount={incrementCount} />)} />
 
         <CounterTwo render={(count,incrementCount)=>(
         <HoveredCountTwo count={count} incrementCount={incrementCount} />)} />
-        
-        
 
-        {/*
         <ClickCounterTwo />
         <HoveredCountTwo />
         <User render={(isLoggedIn)=> isLoggedIn ?'walk' : 'guest'} />
